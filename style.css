@@ -1,0 +1,164 @@
+:root {
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+
+  --ff: "Epilogue", sans-serif;
+  --fs: 1.125rem;
+}
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* BODY */
+
+html,
+body {
+  height: 100%;
+  background-color: var(--Almost-White);
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Medium-Gray);
+}
+
+li:hover a {
+  color: var(--Almost-Black);
+}
+
+li {
+  display: flex;
+  cursor: pointer;
+  gap: 0.3rem;
+}
+
+.arrow {
+  width: 1rem;
+  background: url(images/icon-arrow-down.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.arrow.active {
+  background: url(images/icon-arrow-up.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 2rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.buttons-container button {
+  background-color: transparent;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.8rem;
+  border: 2px solid var(--Medium-Gray);
+  color: var(--Medium-Gray);
+  font-size: var(--fs);
+}
+
+.buttons-container button:hover {
+  color: var(--Almost-Black);
+}
+
+#register-btn:hover {
+  border: 2px solid var(--Almost-Black);
+}
+
+#login-btn {
+  border: none;
+}
+
+/* SECTION */
+
+.container {
+  display: flex;
+  padding-left: 10rem;
+  padding-right: 5rem;
+  padding-block: 3rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+h1 {
+  font-size: 5.2rem;
+  color: var(--Almost-Black);
+  margin-top: 7rem;
+}
+
+section p {
+  line-height: 1.5;
+  color: var(--Medium-Gray);
+  margin-right: 17rem;
+  font-size: var(--fs);
+}
+
+#learn-more-btn {
+  color: var(--Almost-White);
+  background-color: var(--Almost-Black);
+  padding: 1rem 2.5rem;
+  border-radius: 0.8rem;
+  font-size: var(--fs);
+  border: 1px solid var(--Almost-Black);
+}
+
+#learn-more-btn:hover {
+  color: var(--Almost-Black);
+  background-color: var(--Almost-White);
+}
+
+.section-footer {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.attribution {
+  font-size: 0.8rem;
+  color: var(--Medium-Gray);
+  text-align: center;
+}

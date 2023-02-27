@@ -11,13 +11,71 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
-    Features Company Careers About Login Register Make remote work Get your team
-    in sync, no matter your location. Streamline processes, create team rituals,
-    and watch productivity soar. Learn more
+    <div class="page">
+      <header>
+        <div class="header-left">
+          <a href="#"><img src="images/logo.svg" alt="snap logo" /></a>
+          <nav>
+            <ul class="navigation">
+              <li><a href="#">Features</a><span class="arrow"></span></li>
+              <li><a href="#">Company</a><span class="arrow"></span></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="buttons-container">
+          <button type="button" id="login-btn">Login</button>
+          <button type="button" id="register-btn">Register</button>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <section>
+            <h1>
+              Make <br />
+              remote work
+            </h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button type="button" id="learn-more-btn">Learn more</button>
+            <div class="section-footer">
+              <a href="#"
+                ><img src="images/client-databiz.svg" alt="databiz logo"
+              /></a>
+              <a href="#"
+                ><img src="images/client-audiophile.svg" alt="audiophile logo"
+              /></a>
+              <a href="#"
+                ><img src="images/client-meet.svg" alt="meet logo"
+              /></a>
+              <a href="#"
+                ><img src="images/client-maker.svg" alt="maker logo"
+              /></a>
+            </div>
+          </section>
+          <div class="main-image-container">
+            <img
+              src="images/image-hero-desktop.png"
+              alt="Photo of a man using laptop"
+            />
+          </div>
+        </div>
+      </main>
+    </div>
 
     <footer class="attribution">
       <p>
