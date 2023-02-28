@@ -24,12 +24,18 @@
   <body>
     <div class="page">
       <header>
-        <div class="header-left">
-          <a href="#"><img src="images/logo.svg" alt="snap logo" /></a>
+        <a href="#"><img src="images/logo.svg" alt="snap logo" /></a>
+        <div class="header-menu">
           <nav>
             <ul class="navigation">
               <li class="features dropdown">
-                <a href="#">Features</a><span class="arrow"></span>
+                <a href="#"
+                  >Features
+                  <img
+                    src="images/icon-arrow-down.svg"
+                    alt="open features"
+                    class="arrow"
+                /></a>
                 <ul class="features-items">
                   <li>
                     <img src="images/icon-todo.svg" alt="todo" /><a href="#"
@@ -57,7 +63,12 @@
                 </ul>
               </li>
               <li class="company dropdown">
-                <a href="#">Company</a><span class="arrow"></span>
+                <a href="#"
+                  >Company<img
+                    src="images/icon-arrow-down.svg"
+                    alt="open features"
+                    class="arrow"
+                /></a>
                 <ul class="company-items">
                   <li><a href="#">History</a></li>
                   <li><a href="#">Our Team</a></li>
@@ -68,11 +79,12 @@
               <li><a href="#">About</a></li>
             </ul>
           </nav>
+          <div class="buttons-container">
+            <button type="button" id="login-btn">Login</button>
+            <button type="button" id="register-btn">Register</button>
+          </div>
         </div>
-        <div class="buttons-container">
-          <button type="button" id="login-btn">Login</button>
-          <button type="button" id="register-btn">Register</button>
-        </div>
+        <button type="button" id="menu-btn"></button>
       </header>
       <main>
         <div class="container">
